@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --main-green-background:#416363d6;
+    --white-foreground: rgb(230, 229, 229);
+    --black-foregorund: rgb(34, 34, 34);
+    --grey-background: rgb(224, 224, 224);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.cv-header{
+    background-color: var(--main-green-background);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5% 3% !important;
+}
+.cv-header-image{
+    width:30% !important;
+
+}
+.cv-header-image__img{
+    width: 60%;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.cv-header-description{
+    width: 60% !important;
+}
+.cv-header-description__name{
+    color: var(--white-foreground);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.cv-header-description__role{
+    margin-top: -2% !important;
+    text-align: center;
+}
+.cv-header-description__desc{
+    color: var(--black-foregorund);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.cv-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1%;
+}
+.cv-body>div{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+.cv-body>div>div{
+    padding: 1% 2% !important;
+}
+.cv-body>div>div>h2{
+    font-weight: 800;
+    font-size: 25px;
+}
+.sub-title{
+    font-weight: 700 !important;
+    color: var(--black-foregorund) !important;
+    font-family: 'Roboto',sans-serif;
+}
+.personal-information>div>h2{
+    color: var(--white-foreground);
+    font-weight: 400 !important;
+    font-family: 'Roboto',sans-serif;
+}
+.personal-information>div{
+    background-color: var(--main-green-background);
+    margin: 1% 0% !important;
+    border-radius: 3px;
+}
+.professional-information>div{
+    background-color: var(--grey-background);
+    margin: 1% 0% !important;
+    border-radius: 3px;
+}
+.address-information__list{
+    list-style-type: none;
+}
+.address-information__list>li{
+    display: flex;
+    width: 50%;
+    padding: 0% !important;
+    margin-left: -5% !important;
+    margin: 1% 0% 1% -5% !important;
+}
+.address-information__list>li>i{
+    color: var(--black-foregorund);
+    font-size: 15px;
+    margin:0.5% 5% 0.5% 0% !important;
+}
+.work-experience-information__item-role,.education-information__period{
+    margin-top: -2% !important;
+    font-style: italic;
+    font-size: 14px;
+}
+.work-experience-information__item-responsibilities-title{
+    text-align: center !important;
+}
+
+li{
+    margin-left: -3% !important;
+    font-size: 17px;
+}
