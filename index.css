@@ -21,12 +21,13 @@ body{
     padding: 0.5% 3% !important;
 }
 .cv-header-image{
-    width:25% !important;
+    width:30% !important;
+    margin-top: 20px;
 
 }
 .cv-header-image__img{
-    width: 50%;
-    height: 180px;
+    width: 60%;
+    height: 250px;
     border-radius: 100%;
     object-fit: cover;
 }
@@ -38,16 +39,20 @@ body{
     font-weight: bold;
     font-size: 30px;
     text-align: center;
+    margin-top: 35px;
 }
 .cv-header-description__role{
     margin-top: -2% !important;
     text-align: center;
 }
-.cv-header-description__desc{
+.cv-header-description__desc {
     color: var(--black-foregorund);
     font-weight: 500;
     font-size: 17px;
+    letter-spacing: 0.7px; 
+    line-height: 1.4; 
 }
+
 
 .cv-body{
     display: flex;
@@ -86,6 +91,8 @@ body{
     background-color: var(--grey-background);
     margin: 1% 0% !important;
     border-radius: 3px;
+    letter-spacing: 0.7px; 
+    line-height: 1.2; 
 }
 .address-information__list{
     list-style-type: none;
@@ -102,16 +109,22 @@ body{
     font-size: 15px;
     margin:0.5% 5% 0.5% 0% !important;
 }
-.work-experience-information__item-role,.education-information__period{
-    margin-top: -2% !important;
-    font-style: italic;
-    font-size: 14px;
-}
-.work-experience-information__item-responsibilities-title{
-    text-align: center !important;
+.work-experience-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    background-color: var(--grey-background);
+    padding: 1%;
+    border-radius: 3px;
 }
 
-li{
-    margin-left: -3% !important;
-    font-size: 17px;
+.work-experience-information__item {
+    width: 100%;
+    padding: 0 3%;
+    box-sizing: border-box;
 }
+
+
